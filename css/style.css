@@ -214,25 +214,21 @@ section .info #btn:hover{
 
 /* client page css start here */
 .client{
-   background: url(../images/slider/bg-img.jpg), rgba(0,0,0,0.1);
+  background-color: #f65f13;
    background-repeat: no-repeat;
-   background-position: left;
-   background-size: cover;
-    width: 100%;
-    height: 100%;
+
+   
     text-align: center;
-    opacity: 0.8;
 }
 .client h2{
-    font-size: 32px;
+    font-size: 35px;
     text-transform: none;
     margin-top: 0;
     margin-bottom: 15px;
     font-weight: 600;
     color: #f4f4f4 !important;
     letter-spacing: 1px;
-    z-index: 1;
-    opacity: 2;
+  
 }
 .client p{
     color: #cdc9c9;
@@ -243,7 +239,7 @@ section .info #btn:hover{
     display: inline-block;
     line-height: 30px;
     z-index: 1;
-    opacity: 2;
+ 
 }
 /* client page css end here */
 section .center .image{
