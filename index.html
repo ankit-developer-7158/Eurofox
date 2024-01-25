@@ -17,7 +17,7 @@
  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
    </script>
     <style>
-        .item{
+        /* .item{
           background-color: transparent;
         }
         .item img{
@@ -30,17 +30,21 @@
 
         }
         .owl-item h1{
-          font-size: 28px;
-          font-weight: 650;
-          letter-spacing: 2px;
+          transition: all 0s ease 0s;
           color: #fff;
-          line-height: 40px; align-items: center;
-          text-align: left;
-          margin-top: 30px;
+          min-height: 0px;
+          min-width: 0px;
+          line-height: 55px;
+          border-width: 0px;
+          margin: 0px;
+          padding: 0px;
+          letter-spacing: 0px;
+          font-size: 41px;
+          font-weight: 650;
         }
         .owl-item p{
-          font-size: 18px;
-          line-height: 30px;
+          font-size: 17px;
+          line-height: 35px;
           color: #fff;
           font-weight: 500;
           line-height: 30px;
@@ -48,14 +52,92 @@
         .owl-item .image img{
           width: 100%;
         }
-        #back{
-          background-image: url(images/slider/eurofox-bg1.jpg);
-        } 
-        #back{
-
+        .owl-item a{
+          transition: all 0.4s ease-in-out 0s;
+          min-height: 0px;
+          min-width: 0px;
+          line-height: 17px;
+          border-width: 1px 1px 3px;
+          margin: 0px;
+          padding: 15px 35px;
+          letter-spacing: 0px;
+          font-size: 12px;
         }
-        #back{}
-    
+        .owl-item .lern-btn{
+          background: #16214e;
+          color: #fff;
+          box-shadow: 1px 1px 2px 0px #03f3f7fd;
+        }
+        .owl-item .lern-btn ,.owl-item .get-btn{
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: 700;
+          border-bottom: 3px solid rgba(0,0,0,.4);
+          position: relative;
+          display: inline-block;
+          overflow: hidden;
+          margin-right: 10px;
+        }
+        .owl-item .lern-btn:hover{
+          background-color: #f65f13;
+          color: #fff;
+          transition: all .4s ease-in-out;
+          box-shadow: 3px 2px 6px 2px #16214e;
+        }
+        .owl-item .get-btn:hover{
+          background-color: #f65f13;
+          color: #fff;
+          transition: all .4s ease-in-out;
+          box-shadow: 3px 2px 6px 2px #16214e;
+        }
+        .owl-item .get-btn{
+          color: #16214e;
+          background: #fff;
+          box-shadow: 1px 1px 2px 0px #16214e;
+        }
+        #back{
+          background-image: url(images/slider/eurofox-bg.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        } 
+        #back_1{
+          background-image: url(images/slider/eurofox-bg1.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+        #back_2{
+          background-image: url(images/slider/eurofox-bg3.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+         
+        } */
+        #back{
+    background-image: url(images/slider/eurofox-bg1.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+  } 
+  #back_1{
+    background-image: url(images/slider/eurofox-bg4.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #back_2{
+    background-image: url(images/slider/eurofox-bg6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .owl-carousel .owl-nav button.owl-prev{
+    display: none;
+  }
+  .owl-carousel .owl-nav button.owl-next{
+    display: none;
+  }
     </style>
 </head>
 <body> 
@@ -66,8 +148,31 @@
                   <div class="owl-item pt-5 pb-5" id="back"><div class="container pt-2">
                     <div class="row">
                       <div class="col-md-7">
-                        <h1>Lorem ipsum dolor sit amet.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non saepe atque, quibusdam consequatur molestias id repudiandae aliquam sequi veniam impedit dignissimos adipisci esse nostrum eos libero! Nesciunt ullam velit iste.</p>
+                        <h1 class="pt-5 pb-2">Bulk SMS Services Noida <br>
+                          Cost Effective and Quick reaction </h1>
+                        <p>We offer Reliable, Cost Effective, Best Customer Support, Quick reaction and after <br>that associate with all VAS Industry sellers</p>
+                        <a href="#" class="lern-btn">Learn More</a>
+                        <a href="#" class="get-btn">Get A Quote</a>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="image">
+                          <img src="images/slider/eurofox-slide-right.png" alt="">
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                  <div class="owl-item pt-5 pb-5" id="back_1">
+                    <div class="container pt-2">
+                    <div class="row">
+                      <div class="col-md-7">
+                        <h1 class="pt-5 pb-2"> Promotional, Transactional, <br>
+                          Long Code & Short Code SMS
+                      </h1>
+                        <p>Faster, reliable and secure HTTP & SMPP Gateway. Personalised Sender ID.</p>
+                        <a href="#" class="lern-btn">Learn More</a>
+                        <a href="#" class="get-btn">Get A Quote</a>
                       </div>
                       <div class="col-md-5">
                         <div class="image">
@@ -76,26 +181,14 @@
                       </div>
                     </div>
                   </div></div>
-                  <div class="owl-item pt-5 pb-5">
-                    <div class="container">
+                  <div class="owl-item pt-5 pb-5" id="back_2">
+                    <div class="container pt-2">
                     <div class="row">
                       <div class="col-md-7">
-                        <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, in?</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, facilis! Blanditiis ratione animi repudiandae molestias ad tenetur sunt! Ducimus, quia.</p>
-                      </div>
-                      <div class="col-md-5">
-                        <div class="image">
-                          <img src="images/slider/eurofox-slide-right.png" alt="">
-                        </div>
-                      </div>
-                    </div>
-                  </div></div>
-                  <div class="owl-item pt-5 pb-5">
-                    <div class="container">
-                    <div class="row">
-                      <div class="col-md-7">
-                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, aliquam.</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nesciunt quis optio in quae aspernatur maxime! Impedit aliquid vel repudiandae.</p>
+                        <h1 class="pt-5 pb-2">Two Way <br> SMS Gateway</h1>
+                        <p> Eurofox offers their client a two way sms gateway which enables you to get SMS, <br>other than active SMS.</p>
+                        <a href="#" class="lern-btn">Learn More</a>
+                        <a href="#" class="get-btn">Get A Quote</a>
                       </div>
                       <div class="col-md-5">
                         <div class="image">
@@ -103,7 +196,8 @@
                         </div>
                       </div>
                     </div>
-                  </div></div>
+                  </div>
+                </div>
               </div>
           </div>
     </div>
@@ -272,23 +366,34 @@
         items:1,
         dots:false,
         autoplay:true,
-        autoplayTimeout:3000,
+        autoplayTimeout:4000,
        
   });
 
-  var owl = $('.owl-carousel');owl.owlCarousel({
-        items:5, 
-  // //  // items change number for slider display on desktop
-   
-        loop:true,
-        margin:5,
-        autoplay:true,
-        autoplayTimeout:2000,
-        autoplayHoverPause:true,
-        dots:false,
-        center:true,
-        stagePadding: 50
-    });
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    autoplay:true,
+    dots: false,
+    autoplayHoverPause:true,
+    autoplayTimeout:2000,
+    responsive:{
+        0:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
 
 });
 
