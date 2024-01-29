@@ -28,17 +28,116 @@
           padding: 3px;
           border: 2px solid #0c121d
         }
+        /* Custom CSS for Hover Navbar */
+    .navbar-nav .nav-link {
+      color: #333; /* Change text color */
+      text-transform: uppercase;
+      font-size: 14.2px;
+      font-weight: 500;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #0c121d
+      ; /* Change text color on hover */
+    }
+
+    .navbar-nav .nav-item:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu {
+      display: none; /* Hide dropdown by default */
+      border: 3px solid #f65f13;
+    }
+
+    .dropdown-menu a {
+      color: #333 !important; /* Change dropdown item text color */
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #007bff; /* Change dropdown item background color on hover */
+      color: #fff; /* Change dropdown item text color on hover */
+    }
+    #flex0{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
     
     </style>
+   <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="col-md-3">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+       <div class="col-md-9">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" style="margin-left: 20%;">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Bulk SMS Service</a>
+                <a class="dropdown-item" href="#">SMS Gateway Integration</a>
+                <a class="dropdown-item" href="#">Vas Services</a>
+                <a class="dropdown-item" href="#">Bulk SMS API Development</a>
+                <a class="dropdown-item" href="#">Promotional SMS</a>
+                <a class="dropdown-item" href="#">Virtual Phone Number</a>
+                <a class="dropdown-item" href="#">Transactional SMS</a>
+                <a class="dropdown-item" href="#">Two Way SMS</a>
+                <a class="dropdown-item" href="#">Reseller Option</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Branches
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Delhi</a>
+                <a class="dropdown-item" href="#">Gurgaon</a>
+                <a class="dropdown-item" href="#">Meerut</a>
+                <a class="dropdown-item" href="#">Bangalore</a>
+                <a class="dropdown-item" href="#">Mumbai</a>
+                <a class="dropdown-item" href="#">Patna</a>
+                <a class="dropdown-item" href="#">Kanpur</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Buy Online SMS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+       </div>
+      </nav>
+    </div>
+   </div>
 </head>
 <body> 
     <div class="sub_heading">
         <div class="container">
             <div class="heading_1">
-                <h1>Terms & Conditions</h1>
+                <h1>Payment Mode</h1>
                 <ul>
                     <li><a href="index.html" id="home">Home <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
-                    <li><a href="#">Bulk SMS Service</a></li>
+                    <li><a href="#">Buy SMS</a></li>
                 </ul>
             </div>
         </div>
