@@ -3,6 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700&display=swap');
+
+/* top-band css start here */
+.top-band {
+    background: #1e2f75;
+
+}
+.head {
+    font-size: 16px;
+    color: #fff;
+}
+.head span, .head a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #fff;
+}
+.social_icon {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.social_icon li {
+    list-style: none;  
+}
+
+.social_icon a {
+    font-size: 16px;
+    color: #fff;
+    margin-left: 10px;
+}
+.social_icon a:hover{
+  color: #f65f13;
+}
+/* top-band css end here */
+
 header{
     background-color: #060922;
     width: 100%;
@@ -367,7 +406,7 @@ section .center .image{
     background-size: cover;
     background-repeat: repeat;
     position: relative;
-    height: 200px;
+    height: 180px;
     box-shadow: 1px 2px 5px 2px #060922;
 }
 .sub_heading .heading_1,
@@ -381,7 +420,7 @@ section .center .image{
 }
 .sub_heading .heading_1 h1,
 .sub_heading-1 .heading_1 h1{
-    font-size: 43px;
+    font-size: 40px;
     font-weight: 750;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -561,7 +600,7 @@ section .info .btn {
     padding: 15px 35px;
     transition: all .4s ease-in-out;
 }
-section .info .btn {
+section .info .btn ,.health_care .info_2 ul #btn{
     background: #16214e;
     font-size: 12px;
     text-transform: uppercase;
@@ -579,12 +618,12 @@ section .info .btn {
     padding: 12px 35px;
     transition: all .4s ease-in-out;
 }
-section .info .btn{
+section .info .btn ,.health_care .info_2 ul #btn{
     color: #03f3f7fd;
     transition: all .4s ease-in-out;
     box-shadow: 2px 2px 6px 1px rgba(255, 107, 1, 0.992);
 }
-section .info .btn:hover{
+section .info .btn:hover ,.health_care .info_2 ul #btn:hover{
     color: #f65f13;
     transition: all .4s ease-in-out;
     box-shadow: 2px 2px 6px 1px #03f3f7fd;
@@ -611,7 +650,7 @@ section .info .btn:hover{
     font-family: 'Open Sans',sans-serif;
 }
 .section_1 .info{
-    background-color: #ccc;
+    background-color: #ebebeb;
     text-align: center;
     padding: 0 6px;
     height: 200px;
@@ -622,7 +661,7 @@ section .info .btn:hover{
     box-shadow: 2px 2px 6px 1px rgba(138, 137, 137, 0.992);
 }
 .section_1 .info:hover{
-    background-color: #ebebeb;
+    background-color: #ccc;
     transition: 0.4s ease-in;
 }
 .section_1 .info p{
@@ -795,7 +834,34 @@ width: 100%;
     height: 300px;
     padding: 10px;
 }
-
+.health_care .info_2 h1{
+    font-size: 26px;
+    text-transform: none;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #162c83;
+    letter-spacing: 1px;
+}
+.health_care .info_2 p{
+    font-size: 16px;
+    color: #16214e;
+}
+.health_care .info_2 ul li{
+    font-size: 15px;
+    color: #f65f13;
+    font-weight: 660;
+    list-style-type: none;
+}
+.health_care .info_2 ul p{
+    font-size: 15px;
+    color: #16214e;
+}
+.health_care .info_2 ul li i{
+    font-size: 15px;
+    font-weight: 600;
+    color: #162c83;
+}
 /* owl carousel and  slider css start here */
 .item{
     background-color: transparent;
@@ -819,7 +885,7 @@ width: 100%;
     margin: 0px;
     padding: 0px;
     letter-spacing: 0px;
-    font-size: 41px;
+    font-size: 40px;
     font-weight: 650;
   }
   .owl-item p{
@@ -874,6 +940,13 @@ width: 100%;
     color: #16214e;
     background: #fff;
     box-shadow: 1px 1px 2px 0px #16214e;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev{
+    display: none;
+  }
+  .owl-carousel .owl-nav button.owl-next{
+    display: none;
   }
 
   /* footer section css start here  */
@@ -1002,7 +1075,6 @@ width: 100%;
 .footer-info .links li a:hover{
     border-bottom: 1px dashed #f65f13;
     transition: all .2s ease-in-out;
-    color: #;
 }
 .footer-info .links li:before {
     content: "\f0da";
@@ -1101,7 +1173,110 @@ width: 100%;
 .last-footer ul li a:hover{
     color: #ccc;
     transition: all .4s ease-in-out;
-    border-bottom: 1px dashed #fff;
+    border-bottom: 1px dashed #f65f13;
     
 }
+/* navbar css start here  */
+.item{
+    background-color: transparent;
+  }
+  .item img{
+    width: 100%;
+    height: auto;
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 3px;
+    border: 2px solid #0c121d
+  }
+  /* Custom CSS for Hover Navbar */
+.navbar-nav .nav-link {
+    color: #3c4450; /* Change text color */
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 550;
+    margin-left: 8px;
+}
 
+.navbar-nav .nav-link:hover {
+color: #0c121d; /* Change text color on hover */
+}
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+display: block;
+font-size: 14.5px;
+text-transform: capitalize;
+
+}
+
+.dropdown-menu {
+display: none; /* Hide dropdown by default */
+border: 3px solid #f65f13;
+}
+
+.dropdown-menu a {
+color: #333 !important; /* Change dropdown item text color */
+}
+
+.dropdown-menu a:hover {
+
+background-color: #16214e; /* Change dropdown item background color on hover */
+color: #f65f13 !important; /* Change dropdown item text color on hover */
+}
+
+
+#box-shadow{
+    box-shadow: 2px 1px 1px 2px #e84205 !important;
+    border-radius: 0.25rem;
+}
+
+
+.item{
+    background-color: transparent;
+  }
+  .item img{
+    width: 100%;
+    height: auto;
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 3px;
+    border: 2px solid #0c121d
+  }
+ 
+/* media query css start here */
+
+/* @media only screen and (max-width: 768px) {
+    .collapse:not(.show) {
+        display: inline-block;
+    }
+    
+  } */
+  /* @media  (max-width: 768px){
+    section .owl-item #back{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+  } */
+
+  @media  (max-width: 992px){
+    .navbar-nav {
+        display: inline-block;
+        flex-direction: row !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .navbar-nav .nav-link{
+        font-size: 8px;
+        
+    }
+  } 
+  @media (max-width: 1024px){
+    .navbar-nav {
+        display: inline-block;
+        flex-direction: row !important;
+    }
+    .navbar-nav .nav-link{
+        font-size: 10px;
+        
+    }
+  }
