@@ -1409,9 +1409,26 @@ section .info .btn:hover,
   } */
 
 @media only screen and (max-width: 768px) {
-    #back {
+    .owl-item{
         width: 100%;
         height: 100%;
+        display: block;
+    }
+    .owl-item .image {
+      width: 300px;
+    }
+    .owl-item .image img{
+        width: 100%;
+    }
+
+    .owl-item h1{
+        font-size: 23px;
+        font-weight: 600;
+        line-height: 35px;
+    }
+    .owl-item p{
+        font-size: 16px; 
+        line-height: 30px;
     }
 }
 
