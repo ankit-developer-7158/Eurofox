@@ -15,34 +15,48 @@ body {
     background: #1e2f75;
 
 }
+
 .head {
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
 }
+
 .head span,
 .head a {
     text-decoration: none;
     margin-left: 20px;
     color: #fff;
 }
+
 .social_icon {
     display: flex;
     justify-content: end;
     align-items: center;
     margin-bottom: 0px;
 }
+
 .social_icon li {
     list-style: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
 }
 
 .social_icon a {
-    font-size: 16px;
+    font-size: 12px;
+    padding: 8px 6px;
+    border: 1px solid #f7f7f7;
     color: #fff;
-    margin-left: 10px;
+    margin-left: 8px;
 }
+
 .social_icon a:hover {
     color: #f65f13;
+    background-color: #fff;
+    transition: all 0.4s ease-in-out 0s;
+
 }
+
 /* top-band css end here */
 
 header {
@@ -50,6 +64,7 @@ header {
     width: 100%;
     height: 100%;
 }
+
 header h1 {
     text-align: center;
     font-size: 40px;
@@ -127,14 +142,15 @@ section a,
 /* .section page css end here */
 
 /* section page css start here */
-section .info h3 {
+section .info h3,section .info_2 h3 {
     color: #823e2a;
     font-size: 21px;
     font-weight: 500;
     margin-top: 50px;
 }
 
-section .info h1 {
+section .info h1,
+section .info_2 h1 {
     font-size: 30px;
     text-transform: none;
     margin-top: 0;
@@ -144,7 +160,8 @@ section .info h1 {
     letter-spacing: 1px;
 }
 
-section .info p {
+section .info p,
+section .info_2 p{
     text-align: justify;
     font-weight: 500;
     color: #16214e;
@@ -606,7 +623,8 @@ section .info_1 ul li i {
 
 /* contact form section info page css start here */
 
-section .info .contact-form label {
+section .info .contact-form label,
+section .info_2 .contact-form label {
     font-weight: 500;
     color: #444;
     font-size: 14px;
@@ -617,7 +635,8 @@ section .info .contact-form label {
     line-height: 26px;
 }
 
-section .info #form-cont li .form-control {
+section .info #form-cont li .form-control,
+section .info_2 #form-cont li .form-control  {
     box-shadow: none;
     border-radius: 0;
     border: 1px solid #e8e8e8;
@@ -628,12 +647,16 @@ section .info #form-cont li .form-control {
     box-shadow: 2px 2px 6px 1px rgba(255, 107, 1, 0.992);
     background: #16214e;
 }
-
-section .info #form-cont li {
+section .info_2 #form-cont li .form-control {
+    background-color: #ccc !important;
+    box-shadow: none;
+}
+section .info #form-cont li,
+section .info_2 #form-cont li {
     list-style-type: none !important;
 }
-
-section .info #form-cont li input {
+section .info #form-cont li input,
+section .info_2 #form-cont li input {
     display: inline-block;
     width: 100%;
     font-size: 14px;
@@ -641,7 +664,8 @@ section .info #form-cont li input {
     height: 40px;
 }
 
-section .info .form-control {
+section .info .form-control,
+section .info_2 .form-control {
     display: block;
     width: 100%;
     height: 120px;
@@ -663,12 +687,13 @@ section .infotextarea.form-control {
     height: auto;
 }
 
-section .info .btn {
+section .info .btn,
+section .info_2 .btn {
     padding: 15px 35px;
     transition: all .4s ease-in-out;
 }
 
-section .info .btn,
+section .info .btn,section .info_2 .btn,
 .health_care .info_2 ul #btn {
     background: #16214e;
     font-size: 12px;
@@ -688,7 +713,7 @@ section .info .btn,
     transition: all .4s ease-in-out;
 }
 
-section .info .btn,
+section .info .btn,section .info_2 .btn,
 .health_care .info_2 ul #btn {
     color: #03f3f7fd;
     transition: all .4s ease-in-out;
@@ -988,6 +1013,7 @@ section .info .btn:hover,
     border-radius: 20px;
     background-color: #fff;
 }
+
 .owl-item h1 {
     transition: all 0s ease 0s;
     color: #fff;
@@ -1009,12 +1035,15 @@ section .info .btn:hover,
     font-weight: 500;
     line-height: 30px;
 }
-.owl-item .image{
+
+.owl-item .image {
     width: 100%;
 }
+
 .owl-item .image img {
     width: 50%;
 }
+
 .owl-item a {
     transition: all 0.4s ease-in-out 0s;
     min-height: 0px;
@@ -1333,10 +1362,9 @@ section .info .btn:hover,
 
 /* Custom CSS for Hover Navbar */
 .navbar-nav .nav-link {
-    color: #3c4450;
-    /* Change text color */
+    color: #6a7483;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 550;
     margin-left: 8px;
 }
@@ -1348,7 +1376,7 @@ section .info .btn:hover,
 
 .navbar-nav .nav-item:hover .dropdown-menu {
     display: block;
-    font-size: 14.5px;
+    font-size: 14px;
     text-transform: capitalize;
 
 }
@@ -1392,68 +1420,160 @@ section .info .btn:hover,
     border: 2px solid #0c121d
 }
 
-/* media query css start here */
+/*---/ media query css start here /*---*/
 
-/* @media only screen and (max-width: 768px) {
-    .collapse:not(.show) {
-        display: inline-block;
-    }
-    
-  } */
-/* @media  (max-width: 768px){
-    section .owl-item #back{
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-    }
-  } */
 
-@media only screen and (max-width: 768px) {
-    .owl-item{
+
+@media (min-width: 576px) {
+
+    .owl-item {
         width: 100%;
         height: 100%;
         display: block;
     }
+
     .owl-item .image {
-      width: 300px;
-    }
-    .owl-item .image img{
-        width: 100%;
+        width: 78%;
     }
 
-    .owl-item h1{
-        font-size: 23px;
-        font-weight: 600;
-        line-height: 35px;
+    .owl-item .image img {
+        max-width: 100%;
     }
-    .owl-item p{
-        font-size: 16px; 
+
+    .owl-item h1 {
+        line-height: 24px;
+        font-size: 17px;
+    }
+
+    .owl-item p {
+        font-size: 12px;
+        color: #fff;
+        font-weight: 500;
+        line-height: 23px;
+    }
+}
+
+/* @media query 768 start here */
+@media (min-width: 768px) {
+    .owl-item {
+        width: 100%;
+        height: 80%;
+        display: block;
+    }
+
+    .owl-item .image {
+        width: 200px;
+    }
+
+    .owl-item .image img {
+        max-width: 100%;
+    }
+
+    .owl-item h1 {
+        color: #fff;
+        line-height: 34px;
+        font-size: 22px;
+        font-weight: 650;
+    }
+
+    .owl-item p {
+        font-size: 13px;
+        line-height: 30px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .owl-item .lern-btn,
+    .owl-item .get-btn {
+        font-size: 12px;
+        width: 156px;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-bottom: 3px solid rgba(0, 0, 0, .4);
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        margin-right: 10px;
+    }
+}
+
+/* @media query 992 start here */
+@media (min-width: 992px) {
+    .owl-item {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .owl-item .image {
+        width: 85%;
+    }
+
+    .owl-item .image img {
+        max-width: 100%;
+    }
+
+    .owl-item h1 {
+        transition: all 0s ease 0s;
+        color: #fff;
+        line-height: 53px;
+        font-size: 32px;
+        font-weight: 650;
+    }
+
+    .owl-item p {
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .owl-item .lern-btn,
+    .owl-item .get-btn {
+        font-size: 13px;
+        width: 164px;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+}
+
+/* @media query 1200 start here */
+@media (min-width: 1200px) {
+    .owl-item {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .owl-item .image {
+        width: 85%;
+    }
+
+    .owl-item h1 {
+        line-height: 60px;
+        font-size: 40px;
+    }
+
+    .owl-item p {
+        font-size: 15.5px;
         line-height: 30px;
     }
-}
 
-@media (max-width: 992px) {
-    .navbar-nav {
-        display: inline-block;
-        flex-direction: row !important;
-        padding: 0 !important;
-        margin: 0 !important;
+    .owl-item .image {
+        width: 84%;
     }
 
-    .navbar-nav .nav-link {
-        font-size: 8px;
-
-    }
-}
-
-@media (max-width: 1024px) {
-    .navbar-nav {
-        display: inline-block;
-        flex-direction: row !important;
+    .owl-item .image img {
+        max-width: 100%;
     }
 
-    .navbar-nav .nav-link {
-        font-size: 10px;
-
+    .owl-item .lern-btn,
+    .owl-item .get-btn {
+        font-size: 14px;
+        width: 180px;
+        margin-right: 20px;
     }
 }

@@ -5,44 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+  <link rel="icon" type="image/x-icon" href="../eurfoxwebsite/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Latest compiled and minified CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Latest compiled JavaScript -->
   <script src="js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="css/owl.carousel.min.css"
-    rel="stylesheet">
-  <link href="css/owl.theme.default.min.css"
-    rel="stylesheet">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
   <script src="js/jquery.min.js"></script>
   <script src="js/owl.carousel.js">
   </script>
   <style>
-    #back {
-      background-image: url(images/slider/eurofox-bg1.jpg);
-      background-repeat: repeat;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-    }
-
-    #back_1 {
-      background-image: url(images/slider/eurofox-bg4.jpg);
-      background-repeat: repeat;
-      background-size: cover;
-      background-position: center;
-    }
-
-    #back_2 {
-      background-image: url(images/slider/bg8.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-
     .owl-carousel .owl-nav button.owl-prev {
       display: none;
     }
@@ -50,6 +26,22 @@
     .owl-carousel .owl-nav button.owl-next {
       display: none;
     }
+
+    .slider-row {
+      position: relative;
+    }
+
+    .slider-item {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    #slider .owl-item{
+      padding: 0px !important;
+    }
+   
   </style>
 </head>
 
@@ -77,7 +69,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <!-- <div class="container">
     <div class="row">
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="col-md-4">
@@ -146,66 +138,154 @@
         </div>
       </nav>
     </div>
+  </div> -->
+ 
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+         <div class="col-md-4">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         </div>
+         <div class="col-md-8">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="bulk-sms-services.html">Bulk SMS Service</a>
+                  <a class="dropdown-item" href="sms-gateway-integration.html">SMS Gateway Integration</a>
+                  <a class="dropdown-item" href="#">Vas Services</a>
+                  <a class="dropdown-item" href="bulk-sms-api-development.html">Bulk SMS API Development</a>
+                  <a class="dropdown-item" href="promotional-sms-services.html">Promotional SMS</a>
+                  <a class="dropdown-item" href="#">Virtual Phone Number</a>
+                  <a class="dropdown-item" href="transactional-sms-services.html">Transactional SMS</a>
+                  <a class="dropdown-item" href="two-way-sms-gateway.html">Two Way SMS</a>
+                  <a class="dropdown-item" href="bulk-sms-reseller.html">Reseller Option</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Branches
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="bulk-sms-service-provider-in-delhi.html">Delhi</a>
+                  <a class="dropdown-item" href="bulk-sms-service-provider-in-hyderabad.html">Hyderabad</a>
+                  <a class="dropdown-item" href="bulk-sms-service-provider-in-kolkata.html">Kolkata</a>
+                  <a class="dropdown-item" href="bulk-sms-service-provider-in-pune.html">Pune</a>
+                  <a class="dropdown-item" href="bulk-sms-service-provider-in-bangalore.html">Bangalore</a>
+                  <a class="dropdown-item" href="bulk-sms-service-provider-in-mumbai.html">Mumbai</a>
+                  <a class="dropdown-item" href="bulk-sms-service-provider-in-ahmedabad.html">Ahmedabad</a>
+                  <a class="dropdown-item" href="bulk-sms-service-provider-in-Chandigarh.html">Chandigarh</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="buy-online-sms.html">Buy&nbsp;&nbsp;Online&nbsp;&nbsp;SMS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="buy-online-sms.html">Contact&nbsp;&nbsp;Us</a>
+              </li>
+            </ul>
+          </div>
+         </div>
+        </div>
+      </nav>
+    </div>
   </div>
+ 
   <!-- header html end here -->
 
   <section id="slider">
     <div class="owl-carousel owl-theme owl-loaded">
       <div class="owl-stage-outer">
         <div class="owl-stage">
-          <div class="owl-item pt-2 pb-3" id="back">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-7 pt-5">
-                  <h1 class="pt-5 pb-2 ">Bulk SMS Services Noida <br>
-                    Cost Effective and Quick reaction </h1>
-                  <p>We offer Reliable, Cost Effective, Best Customer Support, Quick reaction and after <br>that
-                    associate with all VAS Industry sellers</p>
-                </div>
-                <div class="col-md-5">
-                  <div class="image ">
-                    <img src="images/slider/eurofox-slide-right.png" alt="">
+          <div class="owl-item pt-2 pb-3">
+            <div class="slider-row">
+              <img src="images/slider/eurofox-bg1.jpg" alt="">
+              <div class="slider-item">
+                <div class="container pt-5 pb-5">
+                  <div class="row">
+                    <div class="col-md-7 col-sm-7 col-7">
+                      <h1 class="pt-2">Bulk SMS Services Noida <br>
+                        Cost Effective and Quick reaction </h1>
+                      <p>We offer Reliable, Cost Effective, Best Customer Support, Quick reaction and after that
+                        associate with all VAS Industry sellers</p>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-5">
+                      <div class="image">
+                        <img src="images/slider/eurofox-slide-right.png" alt="">
+                      </div>
+                    </div>
+                    <a href="bulk-sms-services.html" class="lern-btn">Learn More</a>
+                    <a href="contact.html" class="get-btn">Get A Quote</a>
                   </div>
                 </div>
-                <a href="#" class="lern-btn">Learn More</a>
-                <a href="#" class="get-btn">Get A Quote</a>
+              </div>
+            </div>
+
+          </div>
+           <div class="owl-item pt-2 pb-3">
+            <div class="slider-row postion-retailve">
+              <img src="images/slider/eurofox-bg4.jpg" alt="">
+              <div class="slider-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-7 col-sm-7 col-7">
+                      <h1 class="pt-2"> Promotional, Transactional, <br>
+                        Long Code & Short Code SMS</h1>
+                      <p>Faster, reliable and secure HTTP & SMPP Gateway. Personalised Sender ID.</p>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-5">
+                      <div class="image">
+                        <img src="images/slider/eurofox-slide-right2.png" alt="">
+                      </div>
+                    </div>
+                    <a href="promotional-sms-services.html" class="lern-btn">Learn More</a>
+                    <a href="contact.html" class="get-btn">Get A Quote</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="owl-item pt-2 pb-3" id="back_1">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-7 pt-5">
-                  <h1 class="pt-5 pb-2"> Promotional, Transactional, <br>
-                    Long Code & Short Code SMS</h1>
-                  <p>Faster, reliable and secure HTTP & SMPP Gateway. Personalised Sender ID.</p>
-                </div>
-                <div class="col-md-5">
-                  <div class="image">
-                    <img src="images/slider/eurofox-slide-right2.png" alt="">
+          <div class="owl-item pt-2 pb-3">
+            <div class="slider-row postion-retailve">
+              <img src="images/slider/bg8.png" alt="">
+              <div class="slider-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-7 col-sm-7 col-7">
+                      <h1 class="pb-2">Two Way<br>
+                        SMS GATEWAY </h1>
+                      <p> Eurofox offers their client a two way sms gateway which enables you to get SMS,other thanactive SMS.</p>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-5">
+                      <div class="image">
+                        <img src="images/slider/eurofox-slide-right3.png" alt="">
+                      </div>
+                    </div>
+                    <a href="two-way-sms-gateway.html" class="lern-btn">Learn More</a>
+                    <a href="contact.html" class="get-btn">Get A Quote</a>
                   </div>
                 </div>
-                <a href="#" class="lern-btn">Learn More</a>
-                <a href="#" class="get-btn">Get A Quote</a>
-              </div>
-            </div>
-          </div>
-          <div class="owl-item pt-2 pb-3" id="back_2">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-7 pt-5">
-                  <h1 class="pt-5 pb-2">Two Way<br>
-                    SMS GATEWAY </h1>
-                  <p> Eurofox offers their client a two way sms gateway which enables you to get SMS,<br>other than
-                    active SMS.</p>
-                </div>
-                <div class="col-md-5">
-                  <div class="image">
-                    <img src="images/slider/eurofox-slide-right3.png" alt="">
-                  </div>
-                </div>
-                <a href="#" class="lern-btn">Learn More</a>
-                <a href="#" class="get-btn">Get A Quote</a>
               </div>
             </div>
           </div>
