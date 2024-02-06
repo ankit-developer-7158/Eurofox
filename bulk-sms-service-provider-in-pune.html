@@ -5,20 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!--Favicon here -->
+  <link rel="icon" type="image/x-icon" href="../eurfoxwebsite/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Latest compiled and minified CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Latest compiled JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
-    rel="stylesheet">
-  <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
-    rel="stylesheet">
-  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
-  </script>
-  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
-  </script>
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
 </head>
 
 <body>
@@ -36,33 +35,34 @@
 
         <div class="col-md-6  col-sm-3 col-6">
           <ul class="social_icon">
-            <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li> <a href="#" style="  padding: 5.5px 7px;"><i class="fa fa-facebook"></i></a></li>
             <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li> <a href="#" style="  padding: 5.5px 6px;"><i class="fa fa-linkedin"></i></a></li>
             <li> <a href="#"><i class="fa fa-google"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
+ 
   <div class="container">
     <div class="row">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="col-md-4">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+         <div class="col-md-4">
           <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-        </div>
-        <div class="col-md-8">
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+         </div>
+         <div class="col-md-8">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="">About <span class="sr-only">(current)</span></a>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -83,6 +83,7 @@
                   <a class="dropdown-item" href="#">Something else here</a>
                 </div>
               </li>
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">
@@ -101,15 +102,16 @@
                   <a class="dropdown-item" href="#">Something else here</a>
                 </div>
               </li>
+              
               <li class="nav-item">
-                <a class="nav-link" href="buy-online-sms.html"
-                  style="border: 1px solid #0c121d; border-radius: 100px; background-color: #16214e; color: #fff;">Buy Online SMS</a>
+                <a class="nav-link" href="buy-online-sms.html">Buy&nbsp;&nbsp;Online&nbsp;&nbsp;SMS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="contact.html">Contact&nbsp;&nbsp;Us</a>
               </li>
             </ul>
           </div>
+         </div>
         </div>
       </nav>
     </div>
@@ -140,7 +142,64 @@
               individuals. SMS instant messages will be conveyed quickly and conveyed inside a couple of moments.</p>
             <p>We offers all the development SMS sending highlights at financially savvy cost. Likewise, the interface
               is very easy to use which makes it straightforward and work.</p>
-            <a href="" id="btn">Get A Quote</a>
+             <!-- Button trigger modal -->
+             <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="btn">Get A Quote</a>
+
+             <!-- Modal -->
+             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+               aria-labelledby="staticBackdropLabel" aria-hidden="true">
+               <div class="modal-dialog">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                     <h1 class="modal-title fs-5" id="staticBackdropLabel">Get In Touch With Us</h1>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+                   <div class="modal-body">
+                     <div class="contact-form">
+                       <form role="form" action="" id="form-cont" class="contact-form" method="post">
+                         <ul class="row">
+                           <li class="col-sm-6">
+                             <label>
+                               <font style="color: #ff0000; font-size: 16px; font-weight: 650;">*</font>NAME
+                               <input type="text" class="form-control" name="name" id="name" placeholder="">
+                             </label>
+                           </li>
+                           <li class="col-sm-6">
+                             <label>
+                               <font style="color: #ff0000; font-size: 16px; font-weight: 650;">*</font>EMAIL
+                               <input type="text" class="form-control" name="email" id="email" placeholder="">
+                             </label>
+                           </li>
+                           <li class="col-sm-6">
+                             <label>
+                               <font style="color: #ff0000; font-size: 16px; font-weight: 650;">*</font>PHONE
+                               <input type="text" class="form-control" name="phone" id="phone" placeholder="">
+                             </label>
+                           </li>
+                           <li class="col-sm-6">
+                             <label>
+                               <font style="color: #ff0000; font-size: 16px; font-weight: 650;">*</font>SUBJECT
+                               <input type="text" class="form-control" name="subject" id="subject" placeholder="">
+                             </label>
+                           </li>
+                           <li class="col-sm-12">
+                             <label style="display: block;">
+                               <font style="color: #ff0000; font-size: 16px; font-weight: 650;">*</font>MESSAGE
+                               <textarea class="form-control" name="message" id="message" rows="5" placeholder=""
+                                 style="height: 88px;"></textarea>
+                             </label>
+                           </li>
+                           <li class="col-sm-12 no-margin pt-4">
+                             <input type="submit" value="Submit" name="submit"
+                               style="width:130px; height: 40px; background-color: #1b2a66; color: #fff; font-weight: 400;  box-shadow: 2px 2px 6px 1px #1b2a66;">
+                           </li>
+                         </ul>
+                       </form>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
           </div>
         </div>
         <div class="col-md-6">

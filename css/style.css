@@ -43,8 +43,8 @@ body {
 }
 
 .social_icon a {
-    font-size: 12px;
-    padding: 8px 6px;
+    font-size: 13px;
+    padding: 9px 6px;
     border: 1px solid #f7f7f7;
     color: #fff;
     margin-left: 8px;
@@ -463,7 +463,7 @@ section .center .image {
     background-size: cover;
     background-repeat: repeat;
     position: relative;
-    height: 180px;
+    height: 150px;
     box-shadow: 1px 2px 5px 2px #060922;
 }
 
@@ -479,7 +479,7 @@ section .center .image {
 
 .sub_heading .heading_1 h1,
 .sub_heading-1 .heading_1 h1 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 750;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -539,13 +539,13 @@ section .info_1 h1 {
     letter-spacing: 1px;
 }
 
-section .info_1 p {
+section .info_1 p{
     text-align: justify;
     font-weight: 500;
     color: #16214e;
-    font-size: 15px;
-    line-height: 28px;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 14.5px;
+    line-height: 24px;
+    font-family: 'Open Sans',sans-serif;
 }
 
 section .info .image {
@@ -1362,16 +1362,15 @@ section .info .btn:hover,
 
 /* Custom CSS for Hover Navbar */
 .navbar-nav .nav-link {
-    color: #6a7483;
+    color: #823e2a;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 13.5px;
     font-weight: 550;
     margin-left: 8px;
 }
 
 .navbar-nav .nav-link:hover {
     color: #0c121d;
-    /* Change text color on hover */
 }
 
 .navbar-nav .nav-item:hover .dropdown-menu {
