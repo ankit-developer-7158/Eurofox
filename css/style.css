@@ -141,6 +141,29 @@ section a,
 
 /* .section page css end here */
 
+.owl-carousel .owl-nav button.owl-prev {
+    display: none;
+  }
+
+  .owl-carousel .owl-nav button.owl-next {
+    display: none;
+  }
+
+  .slider-row {
+    position: relative;
+  }
+
+  .slider-item {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #slider .owl-item{
+    padding: 0px !important;
+  }
+  
 /* section page css start here */
 section .info h3,section .info_2 h3 {
     color: #823e2a;
@@ -1419,9 +1442,90 @@ section .info .btn:hover,
     border: 2px solid #0c121d
 }
 
+/* <!--sitemap css start here --> */
+.map{
+    color: #132687;
+}
+.sitemap{
+    border-bottom: 4px solid #132687;
+}
+.sitemap h1{
+    font-size: 17px;
+    font-weight: bold;
+}
+.map ul{
+    list-style: none;
+    padding-top: 5px;
+} 
+.map ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #132687;
+    display: inline;
+    font-weight: 600;
+}
+.map ul li i{
+    padding-right: 10px;
+    font-size: 14px;
+    color: #f65f13;
+}
+/* <!--sitemap css end here --> */
+
+/* success page css start here */
+.success{
+    font-family: 'Times New Roman', Times, serif;
+ }
+.success h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #008000;
+    font-family: 'Times New Roman', Times, serif;
+}
+.success p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/* success page css end here */
+
 /*---/ media query css start here /*---*/
 
+@media (min-width: 420px){
+    .owl-item {
+        width: 100%;
+        height: 100%;
+        display: table-row;
+    }
+    .owl-item .image {
+        width: 65%;
+    }
+    .owl-item .image img {
+        max-width: 100%;
+    }
+    .owl-item h1 {
+        line-height: 20px;
+        font-size: 14px;
+        padding: 0 !important;
+    }
+    .owl-item p{
+        font-size: 9px;
+        line-height: 13px;
+    }
+    .owl-item .lern-btn, .owl-item .get-btn {
+        width: 125px;
+        font-size: 9px;
+        margin-left: 5px;
+    }
+    .owl-item a {
+        line-height: 11px;
+        font-size: 17px;
+        padding: 8px 18px;
+    }
 
+
+}
 
 @media (min-width: 576px) {
 
@@ -1432,7 +1536,7 @@ section .info .btn:hover,
     }
 
     .owl-item .image {
-        width: 78%;
+        width: 80%;
     }
 
     .owl-item .image img {
@@ -1445,10 +1549,18 @@ section .info .btn:hover,
     }
 
     .owl-item p {
-        font-size: 12px;
+        font-size: 11px;
         color: #fff;
         font-weight: 500;
-        line-height: 23px;
+        line-height: 22px;
+    }
+    .owl-item .lern-btn, .owl-item .get-btn {
+        width: 137px;
+        font-size: 10px;
+    }
+    .owl-item a{
+        padding: 11px 20px;
+        line-height: 11px;
     }
 }
 
@@ -1461,7 +1573,7 @@ section .info .btn:hover,
     }
 
     .owl-item .image {
-        width: 200px;
+        width: 80%;
     }
 
     .owl-item .image img {
@@ -1471,13 +1583,13 @@ section .info .btn:hover,
     .owl-item h1 {
         color: #fff;
         line-height: 34px;
-        font-size: 22px;
+        font-size: 23px;
         font-weight: 650;
     }
 
     .owl-item p {
         font-size: 13px;
-        line-height: 30px;
+        line-height: 33px;
         font-weight: 500;
         color: #fff;
     }
@@ -1493,6 +1605,10 @@ section .info .btn:hover,
         display: inline-block;
         overflow: hidden;
         margin-right: 10px;
+    }
+    .owl-item a{
+        padding: 10px 23px;
+        line-height: 22px;
     }
 }
 
@@ -1536,6 +1652,10 @@ section .info .btn:hover,
         display: inline-block;
         margin-right: 10px;
     }
+    .owl-item a{
+        padding: 15px 30px;
+        line-height: 21px;
+    }
 
 }
 
@@ -1574,5 +1694,9 @@ section .info .btn:hover,
         font-size: 14px;
         width: 180px;
         margin-right: 20px;
+    }
+    .owl-item a{
+        padding: 15px 30px;
+        line-height: 22px;
     }
 }

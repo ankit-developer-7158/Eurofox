@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success page</title>
+    <!--Favicon here -->
+    <link rel="icon" type="image/x-icon" href="../eurfoxwebsite/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+</head>
+
+<body>
+<di class="success">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="pt-3">Your Transaction finished successfully</h1>
+                <p>
+                    <b>Here are the confirmation fields:</b>
+                </p>
+            
+                <table>
+                
+                    
+                    
+                    
+                    <tr>
+                                    <td>endpointTransactionId</td>
+                                    <td>
+                                        <input id="endpointTransactionId" name="endpointTransactionId" class="x25" size="40" type="text" value="<?php echo $_POST['endpointTransactionId']; ?>">
+                                    </td>
+                                </tr>
+                    
+                    
+                    
+                    <tr>
+                                    <td>approval_code</td>
+                                    <td>
+                                        <input id="approval_code" name="approval_code" class="x25" size="40" type="text" value=<?php echo $_POST['approval_code'];?> 
+                                    </td>
+                                </tr>
+                    
+                    
+                    
+            
+                                
+                            
+                                <tr>
+                                    <td>terminal_id</td>
+                                    <td>
+                                        <input id="terminal_id" name="terminal_id" class="x25" size="40" type="text" value=
+                                        "<?php echo $_POST['terminal_id']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>ipgTransactionId</td>
+                                    <td>
+                                        <input id="ipgTransactionId" name="ipgTransactionId" class="x25" size="40" type="text" value="<?php echo $_POST['ipgTransactionId']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                
+                            
+                                <tr>
+                                    <td>currency</td>
+                                    <td>
+                                        <input id="currency" name="currency" class="x25" size="40" type="text" value="<?php echo $_POST['currency']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                
+                            
+                                <tr>
+                                    <td>chargetotal</td>
+                                    <td>
+                                        <input id="chargetotal" name="chargetotal" class="x25" size="40" type="text" value="<?php echo $_POST['chargetotal']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>timezone</td>
+                                    <td>
+                                        <input id="timezone" name="timezone" class="x25" size="40" type="text" value="<?php echo $_POST['timezone']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>cccountry</td>
+                                    <td>
+                                        <input id="cccountry" name="cccountry" class="x25" size="40" type="text" value="<?php echo $_POST['cccountry']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>oid</td>
+                                    <td>
+                                        <input id="oid" name="oid" class="x25" size="40" type="text" value="<?php echo $_POST['oid']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>ccbin</td>
+                                    <td>
+                                        <input id="ccbin" name="ccbin" class="x25" size="40" type="text" value="<?php echo $_POST['ccbin']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>tdate</td>
+                                    <td>
+                                        <input id="tdate" name="tdate" class="x25" size="40" type="text" value="<?php echo $_POST['tdate']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>response_hash</td>
+                                    <td>
+                                        <input id="response_hash" name="response_hash" class="x25" size="40" type="text" value="<?php echo $_POST['response_hash']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>transactionNotificationURL</td>
+                                    <td>
+                                        <input id="transactionNotificationURL" name="transactionNotificationURL" class="x25" size="40" type="text" value="https://test.ipg-online.com/webshop/transactionNotification">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>txndatetime</td>
+                                    <td>
+                                        <input id="txndatetime" name="txndatetime" class="x25" size="40" type="text" value="<?php echo $_POST['txndatetime']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>status</td>
+                                    <td>
+                                        <input id="status" name="status" class="x25" size="40" type="text" value="<?php echo $_POST['status']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>cardnumber</td>
+                                    <td>
+                                        <input id="cardnumber" name="cardnumber" class="x25" size="40" type="text" value="<?php echo $_POST['cardnumber']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>processor_response_code</td>
+                                    <td>
+                                        <input id="processor_response_code" name="processor_response_code" class="x25" size="40" type="text" value="<?php echo $_POST['processor_response_code']; ?>">
+                                    </td>
+                                </tr>
+                            
+                            
+                            <tr>
+                                    <td>expmonth</td>
+                                    <td>
+                                        <input id="expmonth" name="expmonth" class="x25" size="40" type="text" value="<?php echo $_POST['expmonth']; ?>">
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>expyear</td>
+                                    <td>
+                                        <input id="expyear" name="expyear" class="x25" size="40" type="text" value="<?php echo $_POST['expyear']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>ccbrand</td>
+                                    <td>
+                                        <input id="ccbrand" name="ccbrand" class="x25" size="40" type="text" value="<?php echo $_POST['ccbrand']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>txntype</td>
+                                    <td>
+                                        <input id="txntype" name="txntype" class="x25" size="40" type="text" value="<?php echo $_POST['txntype']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>submitBtn</td>
+                                    <td>
+                                        <input id="submitBtn" name="submitBtn" class="x25" size="40" type="text" value="Submit This Form">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>txndate_processed</td>
+                                    <td>
+                                        <input id="txndate_processed" name="txndate_processed" class="x25" size="40" type="text" value="<?php echo $_POST['txndate_processed']; ?>">
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>paymentMethod</td>
+                                    <td>
+                                        <input id="paymentMethod" name="paymentMethod" class="x25" size="40" type="text" value="<?php echo $_POST['paymentMethod']; ?>">
+                                    </td>
+                                </tr>
+                            
+                    <tr>
+                        <td>response_hash_validation</td>
+                        <td>
+                            <input id="response_hash_validation" name="response_hash_validation" class="x25" size="40" type="text" value=false>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>responseHash_validationFrom</td>
+                        <td>
+                            <input id="responseHash_validationFrom" name="responseHash_validationFrom" class="x25" size="40" type="text" value=null+null+null+null+Y:015185:0015938819:PPX :083109105039+100.00+356+null+null>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</di>
+</body>
+
+</html>
