@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Success page</title>
+    <title>Failure page</title>
     <!--Favicon here -->
     <link rel="icon" type="image/x-icon" href="../eurfoxwebsite/images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -26,43 +26,46 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="pt-3">Your Transaction finished successfully</h1>
+                    <h1 class="pt-3" style="color: #ff0000;">Your Transaction finished with errors</h1>
                     <p>
                         <b>Here are the confirmation fields:</b>
                     </p>
 
                     <table class="mb-4">
-                        <tr>
-                            <td>endpointTransactionId</td>
-                            <td>
-                                <input id="endpointTransactionId" name="endpointTransactionId" class="x25" size="40"
-                                    type="text" value="<?php echo $_POST['endpointTransactionId']; ?>">
-                            </td>
-                        </tr>
 
 
+
+                        <!--<tr>
+                           <td>response_code_3dsecure</td>
+                          <td><input id="response_code_3dsecure" name="response_code_3dsecure" class="x25" size="40"
+                               type="text" value="<?php echo $_POST['response_code_3dsecure']; ?>"/></td>
+                        </tr>-->
+
+                        <!--   <tr>
+                                    <td>endpointTransactionId</td>
+                                    <td>
+                                        <input id="endpointTransactionId" name="endpointTransactionId" class="x25" size="40" type="text" value="<?php echo $_POST['endpointTransactionId']; ?>">
+                                    </td>
+                                </tr>
+                    
+                    -->
 
                         <tr>
                             <td>approval_code</td>
                             <td>
                                 <input id="approval_code" name="approval_code" class="x25" size="40" type="text"
-                                    value=<?php echo $_POST['approval_code'];?>
+                                    value="<?php echo $_POST['approval_code']; ?>">
                             </td>
                         </tr>
 
-
-
-
-
-
-                        <tr>
-                            <td>terminal_id</td>
-                            <td>
-                                <input id="terminal_id" name="terminal_id" class="x25" size="40" type="text"
-                                    value="<?php echo $_POST['terminal_id']; ?>">
-                            </td>
-                        </tr>
-
+                        <!--
+                                <tr>
+                                    <td>terminal_id</td>
+                                    <td>
+                                        <input id="terminal_id" name="terminal_id" class="x25" size="40" type="text" value="<?php echo $_POST['terminal_id']; ?>">
+                                    </td>
+                                </tr>
+                            -->
                         <tr>
                             <td>ipgTransactionId</td>
                             <td>
@@ -71,8 +74,6 @@
                             </td>
                         </tr>
 
-
-
                         <tr>
                             <td>currency</td>
                             <td>
@@ -80,8 +81,6 @@
                                     value="<?php echo $_POST['currency']; ?>">
                             </td>
                         </tr>
-
-
 
                         <tr>
                             <td>chargetotal</td>
@@ -140,13 +139,11 @@
                         </tr>
 
                         <tr>
-                            <td>transactionNotificationURL</td>
-                            <td>
-                                <input id="transactionNotificationURL" name="transactionNotificationURL" class="x25"
-                                    size="40" type="text"
-                                    value="https://test.ipg-online.com/webshop/transactionNotification">
-                            </td>
+                            <td>hash_algorithm</td>
+                            <td><input id="hash_algorithm" name="hash_algorithm" class="x25" size="40" type="text"
+                                    value="<?php echo $_POST['hash_algorithm']; ?>"></td>
                         </tr>
+
 
                         <tr>
                             <td>txndatetime</td>
@@ -163,7 +160,11 @@
                                     value="<?php echo $_POST['status']; ?>">
                             </td>
                         </tr>
-
+                        <tr>
+                            <td>fail_rc</td>
+                            <td><input id="fail_rc" name="fail_rc" class="x25" size="40" type="text"
+                                    value="<?php echo $_POST['fail_rc']; ?>"></td>
+                        </tr>
                         <tr>
                             <td>cardnumber</td>
                             <td>
@@ -171,22 +172,29 @@
                                     value="<?php echo $_POST['cardnumber']; ?>">
                             </td>
                         </tr>
+                        <!--
+                                <tr>
+                                    <td>processor_response_code</td>
+                                    <td>
+                                        <input id="processor_response_code" name="processor_response_code" class="x25" size="40" type="text" value="<?php echo $_POST['processor_response_code']; ?>">
+                                    </td>
+                                </tr>-->
+                        </td>
 
                         <tr>
-                            <td>processor_response_code</td>
-                            <td>
-                                <input id="processor_response_code" name="processor_response_code" class="x25" size="40"
-                                    type="text" value="<?php echo $_POST['processor_response_code']; ?>">
-                            </td>
+                            <td>fail_reason</td>
+                            <td><input id="fail_reason" name="fail_reason" class="x25" size="40" type="text"
+                                    value="<?php echo $_POST['fail_reason']; ?>"></td>
                         </tr>
 
 
-                        <tr>
-                            <td>expmonth</td>
-                            <td>
-                                <input id="expmonth" name="expmonth" class="x25" size="40" type="text"
-                                    value="<?php echo $_POST['expmonth']; ?>">
-                            </td>
+
+
+                        <td>expmonth</td>
+                        <td>
+                            <input id="expmonth" name="expmonth" class="x25" size="40" type="text"
+                                value="<?php echo $_POST['expmonth']; ?>">
+                        </td>
                         </tr>
 
                         <tr>
@@ -213,13 +221,18 @@
                             </td>
                         </tr>
 
-                        <tr>
-                            <td>submitBtn</td>
-                            <td>
-                                <input id="submitBtn" name="submitBtn" class="x25" size="40" type="text"
-                                    value="Submit This Form">
-                            </td>
-                        </tr>
+
+
+                        <!--	<tr>
+                
+                
+                <td>responseFailureURL</td>
+                <td><input id="responseFailURL" name="responseFailURL" class="x25" size="40"
+                    type="text" value="<?php echo $_POST['responseFailURL']; ?>"></td>
+            </tr>
+            -->
+
+
 
                         <tr>
                             <td>txndate_processed</td>
@@ -237,21 +250,7 @@
                             </td>
                         </tr>
 
-                        <tr>
-                            <td>response_hash_validation</td>
-                            <td>
-                                <input id="response_hash_validation" name="response_hash_validation" class="x25"
-                                    size="40" type="text" value=false>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>responseHash_validationFrom</td>
-                            <td>
-                                <input id="responseHash_validationFrom" name="responseHash_validationFrom" class="x25"
-                                    size="40" type="text" value=null+null+null+null+Y:015185:0015938819:PPX
-                                    :083109105039+100.00+356+null+null>
-                            </td>
-                        </tr>
+
                     </table>
                 </div>
             </div>
