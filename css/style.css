@@ -12,8 +12,11 @@ body {
 
 /* top-band css start here */
 .top-band {
-    background: #1e2f75;
-
+    /* background: #1e2f75; */
+    background: linear-gradient(top, #1e2f75, #09aff4);
+    background: -webkit-linear-gradient(top, #1e2f75, #09aff4);
+    background: -o-linear-gradient(top, #1e2f75, #09aff4);
+    background: -moz-linear-gradient(top, #1e2f75, #09aff4);
 }
 
 .head {
@@ -45,7 +48,7 @@ body {
 .social_icon a {
     font-size: 13px;
     padding: 9px 6px;
-    border: 1px solid #f7f7f7;
+    border: 1.5px dotted #f7f7f7;
     color: #fff;
     margin-left: 8px;
 }
@@ -54,13 +57,15 @@ body {
     color: #f65f13;
     background-color: #fff;
     transition: all 0.4s ease-in-out 0s;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
 
 }
 
 /* top-band css end here */
 
 header {
-    background-color: #060922;
+    background-color: #111748;
     width: 100%;
     height: 100%;
 }
@@ -73,8 +78,8 @@ header h1 {
 
 header p {
     text-align: center;
-    font-size: 16px;
-    word-spacing: 1.8px;
+    font-size: 15.5px;
+    word-spacing: 1.6px;
     color: #ddd;
 }
 
@@ -85,7 +90,7 @@ header p {
 }
 
 .section h1 {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 650;
     color: #09aff4;
     text-align: center;
@@ -143,29 +148,31 @@ section a,
 
 .owl-carousel .owl-nav button.owl-prev {
     display: none;
-  }
+}
 
-  .owl-carousel .owl-nav button.owl-next {
+.owl-carousel .owl-nav button.owl-next {
     display: none;
-  }
+}
 
-  .slider-row {
+.slider-row {
     position: relative;
-  }
+}
 
-  .slider-item {
+.slider-item {
     width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  #slider .owl-item{
+}
+
+#slider .owl-item {
     padding: 0px !important;
-  }
-  
+}
+
 /* section page css start here */
-section .info h3,section .info_2 h3 {
+section .info h3,
+section .info_2 h3 {
     color: #823e2a;
     font-size: 21px;
     font-weight: 500;
@@ -184,7 +191,7 @@ section .info_2 h1 {
 }
 
 section .info p,
-section .info_2 p{
+section .info_2 p {
     text-align: justify;
     font-weight: 500;
     color: #16214e;
@@ -280,7 +287,7 @@ section .info #btn:hover {
 
 /* about page css start here */
 .about {
-    background-color: #16214e;
+    background-color: #111748;
 }
 
 .about .info h2 {
@@ -289,13 +296,13 @@ section .info #btn:hover {
     margin-top: 0;
     margin-bottom: 15px;
     font-weight: 700;
-    color: #ddd;
+    color: #fff;
     line-height: 40px;
     letter-spacing: 1px;
 }
 
 .about .info p {
-    color: #6a7483;
+    color: #8392a8;
     font-size: 16px;
     letter-spacing: 1px;
     margin: 0 auto;
@@ -320,15 +327,12 @@ section .info #btn:hover {
     transition: all .4s ease-in-out;
     box-shadow: 1px 2px 6px 1px rgba(255, 107, 1, 0.992);
 }
-
 /* about page css end here */
 
 /* client page css start here */
 .client {
-    background-color: #f65f13;
+    background-color: #ee7a40;
     background-repeat: no-repeat;
-
-
     text-align: center;
 }
 
@@ -352,10 +356,16 @@ section .info #btn:hover {
     display: inline-block;
     line-height: 30px;
     z-index: 1;
+}
 
+.client .owl-carousel .owl-item img {
+    display: block;
+    width: 85%;
+    padding: 10px;
 }
 
 /* client page css end here */
+
 section .center .image {
     margin-top: 30px !important;
     display: block;
@@ -562,13 +572,13 @@ section .info_1 h1 {
     letter-spacing: 1px;
 }
 
-section .info_1 p{
+section .info_1 p {
     text-align: justify;
     font-weight: 500;
     color: #16214e;
     font-size: 14.5px;
     line-height: 24px;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 section .info .image {
@@ -659,7 +669,7 @@ section .info_2 .contact-form label {
 }
 
 section .info #form-cont li .form-control,
-section .info_2 #form-cont li .form-control  {
+section .info_2 #form-cont li .form-control {
     box-shadow: none;
     border-radius: 0;
     border: 1px solid #e8e8e8;
@@ -670,14 +680,17 @@ section .info_2 #form-cont li .form-control  {
     box-shadow: 2px 2px 6px 1px rgba(255, 107, 1, 0.992);
     background: #16214e;
 }
+
 section .info_2 #form-cont li .form-control {
     background-color: #ccc !important;
     box-shadow: none;
 }
+
 section .info #form-cont li,
 section .info_2 #form-cont li {
     list-style-type: none !important;
 }
+
 section .info #form-cont li input,
 section .info_2 #form-cont li input {
     display: inline-block;
@@ -716,7 +729,8 @@ section .info_2 .btn {
     transition: all .4s ease-in-out;
 }
 
-section .info .btn,section .info_2 .btn,
+section .info .btn,
+section .info_2 .btn,
 .health_care .info_2 ul #btn {
     background: #16214e;
     font-size: 12px;
@@ -736,7 +750,8 @@ section .info .btn,section .info_2 .btn,
     transition: all .4s ease-in-out;
 }
 
-section .info .btn,section .info_2 .btn,
+section .info .btn,
+section .info_2 .btn,
 .health_care .info_2 ul #btn {
     color: #03f3f7fd;
     transition: all .4s ease-in-out;
@@ -977,7 +992,7 @@ section .info .btn:hover,
 
 .item {
     background-color: #3db9ee;
-    height: 300px;
+    height: 250px;
     padding: 10px;
 }
 
@@ -1443,50 +1458,58 @@ section .info .btn:hover,
 }
 
 /* <!--sitemap css start here --> */
-.map{
+.map {
     color: #132687;
 }
-.sitemap{
+
+.sitemap {
     border-bottom: 4px solid #132687;
 }
-.sitemap h1{
+
+.sitemap h1 {
     font-size: 17px;
     font-weight: bold;
 }
-.map ul{
+
+.map ul {
     list-style: none;
     padding-top: 5px;
-} 
-.map ul li a{
+}
+
+.map ul li a {
     text-decoration: none;
     font-size: 14px;
     color: #132687;
     display: inline;
     font-weight: 600;
 }
-.map ul li i{
+
+.map ul li i {
     padding-right: 10px;
     font-size: 14px;
     color: #f65f13;
 }
+
 /* <!--sitemap css end here --> */
 
 /* success page css start here */
-.success{
+.success {
     font-family: 'Times New Roman', Times, serif;
- }
-.success h1{
+}
+
+.success h1 {
     font-size: 2rem;
     font-weight: bold;
     color: #008000;
     font-family: 'Times New Roman', Times, serif;
 }
-.success p{
+
+.success p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-/* success page css end here */
 
+/* success page css end here */
