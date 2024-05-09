@@ -576,8 +576,8 @@ section .info_1 p {
     text-align: justify;
     font-weight: 500;
     color: #16214e;
-    font-size: 14.5px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 28px;
     font-family: 'Open Sans', sans-serif;
 }
 
